@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding"
+    android:background="@drawable/background_main">
+
+    <RelativeLayout
+        android:id="@+id/rlListOfRequests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/id_for_online_specialist"
+            style="@style/TextStyleForTitle"
+            android:text="@string/list_of_request"/>
+
+        <LinearLayout
+            android:id="@+id/lvTakeToWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/id_for_online_specialist">
+            <TextView
+                style="@style/TextStyle"
+                android:text="@string/type_of_request"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/spDefineSpecialist"
+                style="@style/SpinnerStyle"/>
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/srlListOfRequests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lvTakeToWork"
+            android:layout_marginBottom="@dimen/marginBottom" >
+            <ListView
+                android:id="@+id/list_navigator_consultant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idSendRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_request"
+            android:tint="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/floating_button_margin_bottom"
+            android:layout_marginEnd="@dimen/floating_button_margin_right"
+            android:contentDescription="@string/contentDescriptionButtonSendRequest"
+            android:backgroundTint="@color/color_for_floating_button"
+            app:fabSize="normal"/>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/activity_failed_internet_connection"
+        android:id="@+id/viewFailedInternetConnection"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarSecondFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/TextStyleForMessageOfDialog"
+            android:text="@string/message_check_age"
+            android:gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnYes"
+                style="@style/ButtonStyleLeft"
+                android:text="@string/button_yes"/>
+            <Button
+                android:id="@+id/btnNo"
+                style="@style/ButtonStyleRight"
+                android:text="@string/button_no"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

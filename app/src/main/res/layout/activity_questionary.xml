@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding"
+    android:background="@drawable/background_main">
+
+    <ScrollView
+        android:id="@+id/svActivityQuestionary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyleForLink"
+                android:text="@string/fill_fields_questionary"/>
+
+            <TextView
+                android:id="@+id/tvTargets"
+                style="@style/TextStyle"
+                android:text="@string/my_targets"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMyTargets"
+                style="@style/EditTextStyle"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietMyTargets"
+                    style="@style/EditTextStyleForTextLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+           <TextView
+                android:id="@+id/tvEducationProblem"
+                style="@style/TextStyle"
+                android:text="@string/problems_with_study" />
+           <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEducationProblem"
+                style="@style/EditTextStyle"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietEducationProblem"
+                    style="@style/EditTextStyleForTextLine" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+           <TextView
+                android:id="@+id/tvFlatProblem"
+                style="@style/TextStyle"
+                android:text="@string/problems_with_flat" />
+           <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFlatProblem"
+                style="@style/EditTextStyle"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietFlatProblem"
+                    style="@style/EditTextStyleForTextLine"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+
+           <TextView
+                android:id="@+id/tvMoneyProblem"
+                style="@style/TextStyle"
+                android:text="@string/problems_with_money"/>
+           <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMoneyProblem"
+                style="@style/EditTextStyle"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietMoneyProblem"
+                    style="@style/EditTextStyleForTextLine" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <TextView
+                android:id="@+id/tvLawProblem"
+                style="@style/TextStyle"
+                android:text="@string/problems_with_law" />
+           <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilLawProblem"
+                style="@style/EditTextStyle"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietLawProblem"
+                    style="@style/EditTextStyleForTextLine"/>
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <TextView
+                android:id="@+id/tvOtherProblem"
+                style="@style/TextStyle"
+                android:text="@string/other_problems" />
+           <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilOtherProblem"
+                style="@style/EditTextStyle"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietOtherProblem"
+                    style="@style/EditTextStyleForTextLine" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <TextView
+               android:id="@+id/tvNameEducationInstitution"
+               style="@style/TextStyle"
+               android:text="@string/name_of_educational_institution" />
+           <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEducationInstitution"
+                style="@style/EditTextStyle"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietEducationInstitution"
+                    style="@style/EditTextStyleForTextLine" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <TextView
+               android:id="@+id/tvLevelOfEducation"
+               style="@style/TextStyle"
+               android:text="@string/level_of_education" />
+           <Spinner
+               android:id="@+id/spLevelOfEducation"
+               style="@style/SpinnerStyle">
+           </Spinner>
+
+            <TextView
+                android:id="@+id/tvMyProfessional"
+                style="@style/TextStyle"
+                android:text="@string/my_professional" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilProfessional"
+                style="@style/EditTextStyle"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietProfessional"
+                    style="@style/EditTextStyleForTextLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvMyInterests"
+                style="@style/TextStyle"
+                android:text="@string/my_interests" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilInterests"
+                style="@style/EditTextStyle"
+                app:errorEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/tietInterests"
+                     style="@style/EditTextStyleForTextLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSendData"
+                style="@style/ButtonStyle"
+                android:text="@string/send" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBarQuestionary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

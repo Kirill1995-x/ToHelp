@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_articles"
+            android:icon="@drawable/ic_articles"
+            android:title="@string/menu_articles" />
+        <item
+            android:id="@+id/menu_specialists"
+            android:icon="@drawable/ic_specialists"
+            android:title="@string/menu_specialists" />
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_resume"
+            android:icon="@drawable/ic_resume"
+            android:title="@string/menu_resume"/>
+        <item
+            android:id="@+id/menu_courses"
+            android:icon="@drawable/ic_courses"
+            android:title="@string/menu_courses"/>
+        <item
+            android:id="@+id/menu_tests"
+            android:icon="@drawable/ic_tests"
+            android:title="@string/menu_tests"/>
+    </group>
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_tech_support"
+            android:icon="@drawable/ic_tech_support"
+            android:title="@string/menu_tech_support"/>
+        <item
+            android:id="@+id/menu_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/menu_exit" />
+    </group>
+</menu>

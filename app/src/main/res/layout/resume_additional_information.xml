@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:padding="@dimen/common_padding">
+
+    <ScrollView
+        android:id="@+id/svAdditionalInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/TextStyleBold"
+                android:text="@string/describe_personal_characteristic" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPersonalCharacteristics"
+                style="@style/EditTextStyle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietPersonalCharacteristics"
+                    style="@style/EditTextStyleForTextLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                style="@style/TextStyleBold"
+                android:text="@string/describe_hobby"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilHobby"
+                style="@style/EditTextStyle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietHobby"
+                    style="@style/EditTextStyleForTextLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                style="@style/TextStyleBold"
+                android:text="@string/describe_wishes_for_work"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilWishesForWork"
+                style="@style/EditTextStyle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietWishesForWork"
+                    style="@style/EditTextStyleForTextLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btnSaveAdditionalInformation"
+                style="@style/ButtonStyle"
+                android:text="@string/save_resume"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/activity_failed_internet_connection"
+        android:id="@+id/viewFailedInternetConnection"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarAdditionalInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

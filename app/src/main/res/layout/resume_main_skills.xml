@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_main"
+    android:padding="@dimen/common_padding">
+
+    <ScrollView
+        android:id="@+id/svMainSkills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/TextStyleBold"
+                android:text="@string/describe_basic_skills"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBasicSkills"
+                style="@style/EditTextStyle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietBasicSkills"
+                    style="@style/EditTextStyleForTextLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvComputerSkills"
+                style="@style/TextStyleBold"
+                android:text="@string/describe_computer_skills"/>
+           <Spinner
+                android:id="@+id/spComputerSkills"
+                style="@style/SpinnerStyle"/>
+
+           <TextView
+                style="@style/TextStyleBold"
+                android:text="@string/describe_program"/>
+           <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilProgram"
+                style="@style/EditTextStyle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietProgram"
+                    style="@style/EditTextStyleForTextLine"
+                    android:hint=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+           <CheckBox
+                android:id="@+id/cbMilitaryService"
+                style="@style/CheckBoxStyle"
+                android:text="@string/describe_military_service"
+                android:textStyle="bold"/>
+
+           <TextView
+                style="@style/TextStyleBold"
+                android:text="@string/choose_drivers_licences"/>
+           <CheckBox
+                android:id="@+id/cbCategoryA"
+                style="@style/CheckBoxStyle"
+                android:text="@string/category_A"/>
+           <CheckBox
+                android:id="@+id/cbCategoryB"
+                style="@style/CheckBoxStyle"
+                android:text="@string/category_B"/>
+           <CheckBox
+                android:id="@+id/cbCategoryBE"
+                style="@style/CheckBoxStyle"
+                android:text="@string/category_BE"/>
+           <CheckBox
+                android:id="@+id/cbCategoryC"
+                style="@style/CheckBoxStyle"
+                android:text="@string/category_C"/>
+           <CheckBox
+                android:id="@+id/cbCategoryCE"
+                style="@style/CheckBoxStyle"
+                android:text="@string/category_CE"/>
+           <CheckBox
+                android:id="@+id/cbCategoryD"
+                style="@style/CheckBoxStyle"
+                android:text="@string/category_D"/>
+           <CheckBox
+                android:id="@+id/cbCategoryDE"
+                style="@style/CheckBoxStyle"
+                android:text="@string/category_DE"/>
+           <CheckBox
+                android:id="@+id/cbCategoryM"
+                style="@style/CheckBoxStyle"
+                android:text="@string/category_M"/>
+           <CheckBox
+                android:id="@+id/cbCategoryTbAndTM"
+                style="@style/CheckBoxStyle"
+                android:text="@string/category_Tb_and_Tm"/>
+
+           <Button
+                android:id="@+id/btnSaveMainSkills"
+                style="@style/ButtonStyle"
+                android:text="@string/save_resume"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/activity_failed_internet_connection"
+        android:id="@+id/viewFailedInternetConnection"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarMainSkills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

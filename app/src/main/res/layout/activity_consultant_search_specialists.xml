@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding"
+    android:background="@drawable/background_main"
+    tools:context=".ConsultantSearchSpecialists">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRequestChooseHelp"
+                style="@style/TextStyle"
+                android:text="@string/request_choose_help"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/spRequestChooseHelp"
+                style="@style/SpinnerStyle">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/tvRequestChooseSpecialist"
+                style="@style/TextStyle"
+                android:text="@string/request_choose_specialist"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/spRequestChooseSpecialist"
+                style="@style/SpinnerStyle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <TextView
+                    style="@style/TextStyleForFragmentWithQuestion"
+                    android:text="@string/place_of_living"/>
+                <ImageView
+                    android:id="@+id/imgCreateRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_question"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="@string/subject_of_country"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvSubjectOfCountry"
+                style="@style/TextStyle"/>
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="@string/city"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvCity"
+                style="@style/TextStyle"/>
+
+            <Button
+                android:id="@+id/btnRequestCall"
+                style="@style/ButtonStyle"
+                android:text="@string/go_to_next_activity"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBarRequestCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+</FrameLayout>

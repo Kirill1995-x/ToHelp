@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/common_padding"
+    android:paddingTop="@dimen/common_padding">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageOfSpecialistForRequest"
+        style="@style/ImageViewListStyle"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/marginBottom">
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/fullname_of_specialist"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/fullname_of_specialist"
+            style="@style/TextStyle"
+            android:text="@string/fullname_of_specialist"/>
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/speciality"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/speciality"
+            style="@style/TextStyle"
+            android:text="@string/speciality"/>
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/status_of_request"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/status_of_request"
+            style="@style/TextStyle"
+            android:text="@string/status_of_request"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="@dimen/common_padding">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="@dimen/marginBottom">
+
+        <EditText
+            android:id="@+id/etNameOfEducation"
+            style="@style/EditTextResume"
+            android:hint="@string/describe_name_of_education"/>
+
+        <TextView
+            android:id="@+id/tvStartAndEndOfEducation"
+            style="@style/TextStyleBold"
+            android:text="@string/describe_start_and_end_of_education"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spStartOfEducation"
+                style="@style/SpinnerStyle"/>
+            <Spinner
+                android:id="@+id/spEndOfEducation"
+                style="@style/SpinnerStyle"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLevelOfEducationResume"
+            style="@style/TextStyleBold"
+            android:text="@string/describe_level_of_education_resume"/>
+        <Spinner
+            android:id="@+id/spLevelOfEducationResume"
+            style="@style/SpinnerStyle"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@android:color/white"
+        android:backgroundTint="@color/color_for_floating_button"
+        android:src="@drawable/ic_delete"
+        android:layout_gravity="center_vertical"
+        app:fabSize="mini"/>
+
+</LinearLayout>

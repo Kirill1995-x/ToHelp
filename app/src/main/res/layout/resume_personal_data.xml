@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_main"
+    android:padding="@dimen/common_padding">
+
+    <ScrollView
+        android:id="@+id/svPersonalData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyleBold"
+                android:text="@string/describe_career_objective"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCareerObjective"
+                style="@style/EditTextStyle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietCareerObjective"
+                    style="@style/EditTextStyleForTextLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/TextStyleBold"
+                android:text="@string/describe_salary"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSalary"
+                style="@style/EditTextStyle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietSalary"
+                    style="@style/EditTextStyleForTextLine"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvEmployment"
+                        style="@style/TextStyleBold"
+                        android:text="@string/describe_employment"/>
+                    <Spinner
+                        android:id="@+id/spEmployment"
+                        style="@style/SpinnerStyle"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvSchedule"
+                        style="@style/TextStyleBold"
+                        android:text="@string/describe_schedule"/>
+                    <Spinner
+                        android:id="@+id/spSchedule"
+                        style="@style/SpinnerStyle"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvMaritalStatus"
+                style="@style/TextStyleBold"
+                android:text="@string/describe_marital_status"/>
+            <Spinner
+                android:id="@+id/spMaritalStatus"
+                style="@style/SpinnerStyle"/>
+            <CheckBox
+                android:id="@+id/cbBusinessTrips"
+                style="@style/CheckBoxStyle"
+                android:text="@string/describe_business_trips"
+                android:textStyle="bold"/>
+            <CheckBox
+                android:id="@+id/cbMoving"
+                style="@style/CheckBoxStyle"
+                android:text="@string/describe_moving"
+                android:textStyle="bold"/>
+            <CheckBox
+                android:id="@+id/cbHavingChildren"
+                style="@style/CheckBoxStyle"
+                android:text="@string/describe_having_children"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btnSavePersonalData"
+                style="@style/ButtonStyle"
+                android:text="@string/save_resume"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/activity_failed_internet_connection"
+        android:id="@+id/viewFailedInternetConnection"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarPersonalData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

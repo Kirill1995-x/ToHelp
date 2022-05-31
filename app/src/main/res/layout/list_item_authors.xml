@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/common_padding"
+    android:paddingTop="@dimen/common_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/author"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/margin_before_imageview_in_documentation"/>
+        <TextView
+            android:id="@+id/tvNameOfAuthor"
+            style="@style/TextStyle"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/name_of_image"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/margin_before_imageview_in_documentation"/>
+        <TextView
+            android:id="@+id/tvNameOfImage"
+            style="@style/TextStyle"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvLinkToImage"
+        style="@style/TextStyleForLink"
+        android:text="@string/link_to_image"/>
+</LinearLayout>

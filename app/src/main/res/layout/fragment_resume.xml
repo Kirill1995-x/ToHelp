@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/common_padding"
+    android:background="@drawable/background_main">
+
+    <ScrollView
+        android:id="@+id/svFifthFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:gravity="center"
+                 android:layout_gravity="center">
+                 <TextView
+                     android:id="@+id/tvResume"
+                     style="@style/TextStyleForFragmentWithQuestion"
+                     android:text="@string/create_resume"/>
+                 <ImageView
+                     android:id="@+id/imgResume"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/ic_question"/>
+             </LinearLayout>
+
+             <TextView
+                android:id="@+id/tvPersonalData"
+                style="@style/TextViewStyleResume"
+                android:contentDescription="@string/contentDescriptionPersonalData"
+                android:text="@string/personal_data"/>
+             <TextView
+                 android:id="@+id/tvMainSkills"
+                 style="@style/TextViewStyleResume"
+                 android:contentDescription="@string/contentDescriptionMainSkills"
+                 android:text="@string/main_skills"/>
+             <TextView
+                android:id="@+id/tvWorkExperience"
+                style="@style/TextViewStyleResume"
+                 android:contentDescription="@string/contentDescriptionWorkExperience"
+                 android:text="@string/work_experience"/>
+             <TextView
+                android:id="@+id/tvEducation"
+                style="@style/TextViewStyleResume"
+                 android:contentDescription="@string/contentDescriptionEducation"
+                 android:text="@string/education"/>
+             <TextView
+                 android:id="@+id/tvLanguage"
+                 style="@style/TextViewStyleResume"
+                 android:contentDescription="@string/contentDescriptionLanguages"
+                 android:text="@string/languages"/>
+             <TextView
+                 android:id="@+id/tvCourses"
+                 style="@style/TextViewStyleResume"
+                 android:contentDescription="@string/contentDescriptionCourses"
+                 android:text="@string/courses"/>
+             <TextView
+                 android:id="@+id/tvProjects"
+                 style="@style/TextViewStyleResume"
+                 android:contentDescription="@string/contentDescriptionProjects"
+                 android:text="@string/projects"/>
+             <TextView
+                android:id="@+id/tvAdditionalInformation"
+                style="@style/TextViewStyleResume"
+                 android:contentDescription="@string/contentDescriptionAdditionalInformation"
+                 android:text="@string/additional_information"/>
+
+             <Button
+                 android:id="@+id/btnCreatePDF"
+                 style="@style/ButtonStyle"
+                 android:text="@string/create_pdf"
+                 android:layout_marginTop="@dimen/marginTop"/>
+
+      </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/activity_failed_internet_connection"
+        android:id="@+id/viewFailedInternetConnection"
+        android:visibility="gone"/>
+
+    <ProgressBar
+       android:id="@+id/progressBarFifthFragment"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:visibility="gone" />
+</FrameLayout>

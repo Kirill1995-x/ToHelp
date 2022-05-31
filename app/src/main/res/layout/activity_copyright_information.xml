@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_main"
+    android:padding="@dimen/common_padding"
+    tools:context=".CopyrightInformation">
+
+    <TextView
+        style="@style/TextStyleForTitle"
+        android:text="@string/description_copyright_information"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/licence"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/margin_before_imageview_in_documentation"/>
+        <TextView
+            android:id="@+id/tvLicence"
+            style="@style/TextStyleForLink"
+            android:text="@string/CC0"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvListOfAuthors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

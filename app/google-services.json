@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "428046662847",
+    "project_id": "tohelp-90202",
+    "storage_bucket": "tohelp-90202.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428046662847:android:88f40bb9205e98c646da0a",
+        "android_client_info": {
+          "package_name": "com.tohelp.tohelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428046662847-1qddbugnee3p8c0nu6l4qt2j6kqs35td.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4zIvlWkKZNepAFrKSTABK36FvN5BVqO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428046662847-1qddbugnee3p8c0nu6l4qt2j6kqs35td.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
